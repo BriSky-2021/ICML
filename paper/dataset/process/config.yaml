@@ -1,0 +1,10 @@
+
+"train_ratio": 0.8,                   # 训练集比例
+"save_global_state": True,            # 是否保留全局state/global_info
+"random_seed": 42,                     # 随机种子
+"train_buffer_file": "train_buffer.pt",
+"test_buffer_file": "test_buffer.pt",
+"train_env_file": "train_env_info.json",
+"test_env_file": "test_env_info.json",
+"train_episodes_file": "episodes_data_train.pkl",
+"test_episodes_file": "episodes_data_test.pkl",

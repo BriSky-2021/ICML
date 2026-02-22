@@ -1,0 +1,212 @@
+{
+  "category_summary": [
+    {
+      "category": "no_action",
+      "description": "无动作 (0)",
+      "work_codes": [
+        0.0,
+        33.0
+      ],
+      "count": 518024,
+      "avg_cost": 0.01,
+      "total_cost": 5726.0,
+      "std_cost": 1.41,
+      "unique_work_codes": 2
+    },
+    {
+      "category": "repair_1",
+      "description": "维修1 (1)",
+      "work_codes": [
+        31.0
+      ],
+      "count": 2667,
+      "avg_cost": 1148.81,
+      "total_cost": 3063872.0,
+      "std_cost": 6328.58,
+      "unique_work_codes": 1
+    },
+    {
+      "category": "repair_2",
+      "description": "维修2 (2)",
+      "work_codes": [
+        35.0,
+        34.0,
+        36.0
+      ],
+      "count": 3011,
+      "avg_cost": 2317.7,
+      "total_cost": 6978598.0,
+      "std_cost": 14056.99,
+      "unique_work_codes": 3
+    },
+    {
+      "category": "repair_3",
+      "description": "维修3 (3)",
+      "work_codes": [
+        38.0,
+        37.0,
+        32.0
+      ],
+      "count": 652,
+      "avg_cost": 3004.33,
+      "total_cost": 1958824.0,
+      "std_cost": 15298.21,
+      "unique_work_codes": 3
+    }
+  ],
+  "detailed_analysis": {
+    "no_action": {
+      "description": "无动作 (0)",
+      "work_codes": [
+        0.0,
+        33.0
+      ],
+      "total_count": 518024,
+      "work_code_details": [
+        {
+          "work_code": 0.0,
+          "count": 517910,
+          "avg_cost": 0.0,
+          "total_cost": 0.0,
+          "std_cost": 0.0,
+          "min_cost": 0.0,
+          "max_cost": 0.0
+        },
+        {
+          "work_code": 33.0,
+          "count": 114,
+          "avg_cost": 50.23,
+          "total_cost": 5726.0,
+          "std_cost": 81.13,
+          "min_cost": 0.0,
+          "max_cost": 734.0
+        }
+      ]
+    },
+    "repair_1": {
+      "description": "维修1 (1)",
+      "work_codes": [
+        31.0
+      ],
+      "total_count": 2667,
+      "work_code_details": [
+        {
+          "work_code": 31.0,
+          "count": 2667,
+          "avg_cost": 1148.81,
+          "total_cost": 3063872.0,
+          "std_cost": 6328.58,
+          "min_cost": 0.0,
+          "max_cost": 183342.0
+        }
+      ]
+    },
+    "repair_2": {
+      "description": "维修2 (2)",
+      "work_codes": [
+        35.0,
+        34.0,
+        36.0
+      ],
+      "total_count": 3011,
+      "work_code_details": [
+        {
+          "work_code": 34.0,
+          "count": 21,
+          "avg_cost": 1692.95,
+          "total_cost": 35552.0,
+          "std_cost": 1787.43,
+          "min_cost": 100.0,
+          "max_cost": 6747.0
+        },
+        {
+          "work_code": 35.0,
+          "count": 2782,
+          "avg_cost": 2341.05,
+          "total_cost": 6512808.0,
+          "std_cost": 14556.53,
+          "min_cost": 0.0,
+          "max_cost": 444444.0
+        },
+        {
+          "work_code": 36.0,
+          "count": 208,
+          "avg_cost": 2068.45,
+          "total_cost": 430238.0,
+          "std_cost": 5113.68,
+          "min_cost": 0.0,
+          "max_cost": 61283.0
+        }
+      ]
+    },
+    "repair_3": {
+      "description": "维修3 (3)",
+      "work_codes": [
+        38.0,
+        37.0,
+        32.0
+      ],
+      "total_count": 652,
+      "work_code_details": [
+        {
+          "work_code": 32.0,
+          "count": 2,
+          "avg_cost": 2600.0,
+          "total_cost": 5200.0,
+          "std_cost": 0.0,
+          "min_cost": 2600.0,
+          "max_cost": 2600.0
+        },
+        {
+          "work_code": 37.0,
+          "count": 90,
+          "avg_cost": 4791.31,
+          "total_cost": 431218.0,
+          "std_cost": 11774.1,
+          "min_cost": 0.0,
+          "max_cost": 93597.0
+        },
+        {
+          "work_code": 38.0,
+          "count": 560,
+          "avg_cost": 2718.58,
+          "total_cost": 1522406.0,
+          "std_cost": 15807.73,
+          "min_cost": 0.0,
+          "max_cost": 239876.0
+        }
+      ]
+    }
+  },
+  "category_definitions": {
+    "no_action": {
+      "work_codes": [
+        0.0,
+        33.0
+      ],
+      "description": "无动作 (0)"
+    },
+    "repair_1": {
+      "work_codes": [
+        31.0
+      ],
+      "description": "维修1 (1)"
+    },
+    "repair_2": {
+      "work_codes": [
+        35.0,
+        34.0,
+        36.0
+      ],
+      "description": "维修2 (2)"
+    },
+    "repair_3": {
+      "work_codes": [
+        38.0,
+        37.0,
+        32.0
+      ],
+      "description": "维修3 (3)"
+    }
+  }
+}

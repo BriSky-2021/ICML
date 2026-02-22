@@ -1,0 +1,82 @@
+{
+  "work_code_analysis": [
+    {
+      "work_code": 0.0,
+      "count": 517910,
+      "proportion": 98.77105924623442,
+      "avg_cost": 0.0,
+      "total_cost": 0.0,
+      "cost_records": 0
+    },
+    {
+      "work_code": 31.0,
+      "count": 2667,
+      "proportion": 0.5086258520007476,
+      "avg_cost": 1148.8083989501313,
+      "total_cost": 3063872.0,
+      "cost_records": 2667
+    },
+    {
+      "work_code": 32.0,
+      "count": 2,
+      "proportion": 0.00038142171128664987,
+      "avg_cost": 2600.0,
+      "total_cost": 5200.0,
+      "cost_records": 2
+    },
+    {
+      "work_code": 33.0,
+      "count": 114,
+      "proportion": 0.02174103754333904,
+      "avg_cost": 50.228070175438596,
+      "total_cost": 5726.0,
+      "cost_records": 114
+    },
+    {
+      "work_code": 34.0,
+      "count": 21,
+      "proportion": 0.004004927968509824,
+      "avg_cost": 1692.952380952381,
+      "total_cost": 35552.0,
+      "cost_records": 21
+    },
+    {
+      "work_code": 35.0,
+      "count": 2782,
+      "proportion": 0.5305576003997299,
+      "avg_cost": 2341.05248023005,
+      "total_cost": 6512808.0,
+      "cost_records": 2782
+    },
+    {
+      "work_code": 36.0,
+      "count": 208,
+      "proportion": 0.03966785797381158,
+      "avg_cost": 2068.451923076923,
+      "total_cost": 430238.0,
+      "cost_records": 208
+    },
+    {
+      "work_code": 37.0,
+      "count": 90,
+      "proportion": 0.01716397700789924,
+      "avg_cost": 4791.311111111111,
+      "total_cost": 431218.0,
+      "cost_records": 90
+    },
+    {
+      "work_code": 38.0,
+      "count": 560,
+      "proportion": 0.10679807916026196,
+      "avg_cost": 2718.582142857143,
+      "total_cost": 1522406.0,
+      "cost_records": 560
+    }
+  ],
+  "summary": {
+    "total_records": 524354,
+    "unique_work_codes": 9,
+    "work_codes_with_cost": 8,
+    "work_codes_without_cost": 1
+  }
+}

@@ -1,0 +1,68 @@
+# ============ Data (downloaded / generated) ============
+# Raw downloaded NBI data (txt/csv from Download script)
+paper/dataset/download/NBIDATA/
+paper/dataset/download/*.txt
+paper/dataset/download/*.zip
+
+# Processed/generated data (large, reproducible from scripts)
+paper/dataset/download/output*.xlsx
+paper/dataset/data/processed/*.csv
+paper/dataset/data/regions/
+paper/dataset/data/episodes/
+paper/dataset/data/transition_metrics/
+
+# ============ Benchmark outputs ============
+paper/benchmark/saved_models/
+paper/benchmark/metrics_results/
+paper/benchmark/training_results/
+*.pth
+*.pkl
+*.npy
+*.npz
+
+# ============ Python ============
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Virtual environments
+venv/
+.venv/
+env/
+.env/
+
+# ============ IDE / OS ============
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+
+# ============ Logs & temp ============
+*.log
+logs/
+.cache/
+
+# ============ Secrets ============
+.env
+.env.*
+*.key

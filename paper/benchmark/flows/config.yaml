@@ -1,0 +1,120 @@
+# Bridge maintenance multi-agent reinforcement learning config
+
+# Data and paths
+data:
+  buffer_file: "paper/dataset/data/episodes/train_buffer.pt"
+  env_info_file: "paper/dataset/data/episodes/train_env_info.json"
+  test_buffer_file: "paper/dataset/data/episodes/test_buffer.pt"
+  test_env_info_file: "paper/dataset/data/episodes/test_env_info.json"
+  results_path: "results"
+
+environment:
+  max_bridges_global: 600  # Max number of bridges to handle
+
+algorithms:
+  - cdt
+  - multitask_bc
+  - multitask_cpq
+
+# Training
+training:
+  num_epochs: 50
+  eval_interval: 2
+  n_episodes: 500
+  save_interval: 10
+  seed: 42
+  batch_size: 1
+  episode_limit: 25
+
+# Learner
+learning:
+  lr: 0.0005
+  gamma: 0.99
+  grad_norm_clip: 10.0
+  target_update_interval: 200
+  learner_log_interval: 10
+  use_cql: true
+  cql_alpha: 0.05
+  double_q: true
+
+# Network
+network:
+  agent: "rnn"
+  rnn_hidden_dim: 64
+  mixer: "group_qmix"  # qmix, vdn, group_qmix, dynamic_group_qmix
+  mixing_embed_dim: 32
+
+  # GCN
+  n_gcn_layers: 2
+  gcn_message_dim: 2
+  mlp_dim: 64
+  mlp_hidden_dim: 64
+  concate_gcn: true
+  concate_mlp: false
+  concate_mlp_dim: 10
+  adj_threshold: 0.1
+
+  # GACG grouping
+  group_num: 7
+  obs_group_trunk_size: 5
+  n_groups: 7
+  group_sizes: 7
+
+  # Attention
+  is_attention: true
+  is_sparse: true
+  topology_alpha: 0.5
+
+  # GroupQMixer
+  mixer: "group_qmix"
+  mixing_embed_dim: 32
+  hypernet_layers: 2
+  hypernet_embed: 64
+
+  # Dynamic grouping
+  use_dynamic_grouping: true
+  max_groups: 7
+  min_group_size: 1
+  max_group_size: 5
+
+# Agents
+agents:
+  obs_last_action: true
+  obs_bridge_id: true
+
+  # Budget agent
+  budget_agent:
+    use_budget_obs: false
+    reward_mode: "max_q"
+
+  # Decision agent
+  decision_agent:
+    use_budget_obs: true
+
+# Hardware
+hardware:
+  use_cuda: true
+  device: "auto"  # auto, cpu, cuda
+
+# Budget
+budget:
+  use_budget_constraint: true
+  budget_penalty_factor: 0.01
+  efficiency_reward_weight: 0.01
+
+# Action costs (historical averages)
+action_costs:
+  0: 0
+  1: 1148.81
+  2: 2317.70
+  3: 3004.33
+
+# Logging and saving
+logging:
+  log_dir: "logs"
+  console_level: "INFO"  # DEBUG, INFO, WARNING, ERROR
+  show_metrics_on_console: true
+  save_decisions: true
+  save_attention: false
+  save_graphs: false
+  log_interval: 100
